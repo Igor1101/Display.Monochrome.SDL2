@@ -21,6 +21,8 @@ private:
 	void init_sdl2(void);
 public:
 	void init(void);
+	void init(int width, int height, int pixelperrealpixel);
+	void init(int width, int height);
 };
 
 
