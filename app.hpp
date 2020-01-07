@@ -19,10 +19,13 @@ private:
 	SDL_Renderer* ren;
 	SDL_Window* win;
 	void init_sdl2(void);
+	void fill(Uint8 *image, int width, int height);
 public:
 	void init(void);
 	void init(int width, int height, int pixelperrealpixel);
 	void init(int width, int height);
+	void out(void*image, int width, int height);
+	void exit(int stat);
 };
 
 
