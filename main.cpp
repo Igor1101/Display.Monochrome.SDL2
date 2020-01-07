@@ -72,15 +72,13 @@ const unsigned char logo [] = {
 int main(int argc, char **argv)
 {
 	App mainwin;
-	mainwin.init(128,64,15);
+	mainwin.init(128,64,6);
 	mainwin.out((void*)logo, 128, 64);
-
-	SDL_Delay(1000);
 	while (1){
 		SDL_Event event;
 		SDL_PollEvent(&event);
 		if(event.type == SDL_QUIT || event.key.keysym.sym == 'q') {
-			mainwin.exit(0);
+			mainwin.exit_prog(0);
 		}
 		mainwin.out((void*)logo, 128, 64);
 	}

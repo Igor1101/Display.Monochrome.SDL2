@@ -102,7 +102,7 @@ void App::fill(Uint8 *image, int width, int height)
 	}
 }
 
-void App::exit(int stat)
+void App::exit_prog(int stat)
 {
 	SDL_DestroyRenderer(ren);
 	SDL_DestroyWindow(win);

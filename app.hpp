@@ -25,7 +25,7 @@ public:
 	void init(int width, int height, int pixelperrealpixel);
 	void init(int width, int height);
 	void out(void*image, int width, int height);
-	void exit(int stat);
+	void exit_prog(int stat);
 };
 
 
